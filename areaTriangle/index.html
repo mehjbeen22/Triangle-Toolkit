@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Area of Triangle</title>
+
+    <link rel="stylesheet" href="../areaTriangle/style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="../isTrinagle/index.html">🛆 Is Triangle?</a>
+      <a href="../quiz/index.html">🛆 Quiz of Triangle</a>
+      <a href="../hypotenuse/index.html">🛆 Calculate Hypotenuse</a>
+      <a href="../areaTriangle/index.html">🛆 Area of Triangle</a>
+    </nav>
+    <!-- ---------------------------------------------- -->
+    <div id="cantainer" class="flex">
+      <h1>Calculate Area of a triangle</h1>
+
+      <div id="Area-Case">
+        <h2>Area of Triangle Formula</h2>
+        <p>A = 1/2 (base * height)</p>
+        <label>Enter Base</label>
+        <input type="number" class="input-box" />
+
+        <label>Enter Height </label>
+        <input type="number" class="input-box" />
+
+        <button id="btn">Calculate Area</button>
+        <h2 id="output"></h2>
+      </div>
+    </div>
+    <script>
+      const inputsofAngles = document.querySelectorAll(".input-box");
+      const angleCalculateBtn = document.querySelector("#btn");
+      const outputElement = document.querySelector("#output");
+
+      const calculateBaseAndHeight = (a, b) => {
+        const BaseAndHeight = a * b;
+        return BaseAndHeight;
+      };
+
+      const calculateArea = () => {
+        const BaseAndHeight = calculateBaseAndHeight(
+          Number(inputsofAngles[0].value),
+          Number(inputsofAngles[1].value)
+        );
+        const areaOfTriangle = (1 / 2) * BaseAndHeight;
+        outputElement.innerText = `The Area of Triangle is ${areaOfTriangle}`;
+      };
+
+      angleCalculateBtn.addEventListener("click", calculateArea);
+    </script>
+  </body>
+</html>

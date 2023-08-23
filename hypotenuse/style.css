@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Hurricane&family=Noto+Sans:wght@300&family=Pacifico&family=Ysabeau+Office:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Edu SA Beginner", cursive;
+  font-family: "Hurricane", cursive;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Pacifico", cursive;
+  font-family: "Ysabeau Office", sans-serif;
+}
+
+:root {
+  --heading-color: #be185d;
+  --color: #be185d;
+  --white-bgc: #fff;
+  --Case-border-color: #db2777;
+  --hover-border: #db2777;
+  --hover-bgc-btn: #fdf2f8;
+  --input-border-color: #f472b6;
+  --input-bgc: #e5e7eb;
+  --label-color: #000000;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------------------------------------------------- */
+
+nav {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 10px 36px 0px;
+  margin-bottom: 1.3rem;
+}
+
+a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: var(--color);
+  font-weight: bold;
+  margin-inline: 15px;
+  padding: 10px;
+}
+
+a:hover {
+  background-color: var(--hover-bgc-btn);
+  border: 1px solid var(--hover-border);
+  box-shadow: rgba(0.1, 0.8, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--color);
+}
+
+#Hypotenuse-case {
+  background-color: var(--white-bgc);
+  box-shadow: #00000059 0 5px 15px;
+  margin: 2rem;
+  width: 35%;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  border: 15px solid var(--Case-border-color);
+}
+
+h2,p{
+  text-align: center;
+  font-size: 1.6rem;
+  color: var(--color);
+}
+label {
+  font-size: 1.3rem;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.side-input {
+  padding: 1rem;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  background-color: var(--input-bgc);
+  border: none;
+  border: 2px solid var(--input-border-color);
+  border-radius: 5px;
+}
+
+#btn {
+  padding: 15px;
+  margin: 1.6rem auto;
+  font-size: 1.3rem;
+  font-weight: bold;
+  background-color: var(--heading-color);
+  color: var(--white-bgc);
+  border: none;
+  box-shadow: rgba(0.1, 0.8, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 5px;
+}
+
+#btn:hover {
+  background-color: var(--hover-bgc-btn);
+  border: 1px solid var(--Case-border-color);
+  color: var(--color);
+}
+
+#output-case {
+  text-align: center;
+  font-size: 1.6rem;
+  color: var(--color);
+}

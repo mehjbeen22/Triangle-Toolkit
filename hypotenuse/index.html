@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hypotenuse</title>
+
+    <link rel="stylesheet" href="../Hypotenuse/style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="../isTrinagle/index.html">🛆 Is Triangle?</a>
+      <a href="../quiz/index.html">🛆 Quiz of Triangle</a>
+      <a href="../hypotenuse/index.html">🛆 Calculate Hypotenuse</a>
+      <a href="../areaTriangle/index.html">🛆 Area of Triangle</a>
+    </nav>
+
+    <!-- ---------------------------------------------- -->
+
+    <div id="cantainer" class="flex">
+      <h1>Calculate Hypotenuse of a triangle</h1>
+      <div id="Hypotenuse-case">
+        <h2>Hypotenuse formula</h2>
+        <p>√(base² + height²)</p>
+        <label>Enter base value (a) =</label>
+        <input type="number" class="side-input" />
+        <label>Enter height value (b) =</label>
+        <input type="number" class="side-input" />
+
+        <button id="btn">Calculate Hypotenuse</button>
+
+        <h2 id="output-case"></h2>
+      </div>
+    </div>
+
+    <!-- ---------------------JAVA SCRIPT ------------------------- -->
+
+    <script>
+      const sideInputs = document.querySelectorAll(".side-input");
+      const hypotenuseBtn = document.querySelector("#btn");
+      const outputElement = document.querySelector("#output-case");
+
+      const calculateSumOfSquares = (a, b) => {
+        const sumOfSquare = a * a + b * b;
+        return sumOfSquare;
+      };
+
+      const calculateHypotenuse = () => {
+        const sumOfSquare = calculateSumOfSquares(
+          Number(sideInputs[0].value),
+          Number(sideInputs[1].value)
+        );
+
+        const lengthOfHypotenuse = Math.sqrt(sumOfSquare);
+        outputElement.innerText = `The length of Hypotenuse is ${lengthOfHypotenuse}`;
+      };
+
+      hypotenuseBtn.addEventListener("click", calculateHypotenuse);
+    </script>
+  </body>
+</html>

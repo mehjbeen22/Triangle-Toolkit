@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Hurricane&family=Noto+Sans:wght@300&family=Pacifico&family=Ysabeau+Office:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Edu SA Beginner", cursive;
+  font-family: "Hurricane", cursive;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Pacifico", cursive;
+  font-family: "Ysabeau Office", sans-serif;
+}
+
+nav {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 10px 36px 0px;
+  margin-bottom: 1.3rem;
+}
+
+a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #be185d;
+  font-weight: bold;
+  margin-inline: 15px;
+  padding: 10px;
+}
+
+.main-Case {
+  /* border: solid red; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#main-box {
+  background-color: #fff;
+  box-shadow: #00000059 0 5px 15px;
+  height: 70vh;
+  width: 35%;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  border: 15px solid #db2777;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  color: #be185d;
+}
+
+label {
+  font-size: 1.3rem;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.angle-Input {
+  padding: 1rem;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  background-color: #e5e7eb;
+  border: none;
+  border: 2px solid #f472b6;
+  border-radius: 5px;
+}
+
+#isTrianleBtn {
+  width: 35%;
+  padding: 15px;
+  margin: 10px auto;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #be185d;
+  color: #fff;
+  border: none;
+  box-shadow: rgba(0.1, 0.8, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 5px;
+}
+
+#output {
+  font-size: 2rem;
+  margin: 1.5rem;
+  color: #be185d;
+}
+
+a:hover {
+  background-color: #fdf2f8;
+  border: 1px solid #db2777;
+  box-shadow: rgba(0.1, 0.8, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 5px;
+}
+
+#isTrianleBtn:hover {
+  background-color: #fdf2f8;
+  border: 1px solid #db2777;
+  color: #be185d;
+}
